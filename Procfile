@@ -1,1 +1,1 @@
-web: gunicorn bae599dv:app
+web: gunicorn bae599dv.wsgi --log-file -
