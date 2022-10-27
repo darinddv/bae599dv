@@ -2,7 +2,7 @@
 {% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="{% static 'plotter/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'plotter/styles.css' %}?{% now 'U' %}">
     <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png"/>
     <meta charset="UTF-8">
     <meta name="author" content="Darin Vaughan" />
@@ -32,7 +32,6 @@
             <li>
                 Link 2
             </li>
-                Link 3
             </ul>
     </nav>
     <main>
