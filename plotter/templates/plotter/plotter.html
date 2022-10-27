@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'plotter/styles.css' %}">
     <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png"/>
     <meta charset="UTF-8">
     <meta name="author" content="Darin Vaughan" />
@@ -16,53 +17,30 @@
 </head>
 <body>
     <header>
-        <h1 class="header">Hi, I'm Darin</h1>
+        <h1 class="header">Solar Panel Sizing</h1>
     </header>
     <nav>
         <header class="profile">
             <h2>
-                <img src="img/mockup.png" width="125" alt="" class="profile-img">
             </h2>
         </header>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href="https://github.com/joedvorak/ag-informatics-course/tree/main/module1/HW1.1" target="_blank">
-                Course Github
-            </a>
-        </li>
-          <li>
-            <a href="https://github.com/darinddv/vaughan-BAE599-Homework/tree/main/HW1" target="_blank">
-            HW1 Github
-            </a>
-        </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                Link 1
+            </li>
+            <li>
+                Link 2
+            </li>
+                Link 3
+            </ul>
     </nav>
     <main>
         <article class="work">
-            <p>Work</p>
-            <table class="tasks">
-                <tr>
-                    <td>
-                        <img src="img/repair.png" width="25" alt="" class="repair">
-                    </td>
-                    <td>Repair</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="img/plan.png" width="25" alt="" class="plan">
-                    </td>
-                    <td>Plan</td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="img/supply.png" width="25" alt="" class="supply">
-                    </td>
-                    <td>Supply</td>
-                </tr>
-                </tr>
-            </table>
+            <p>Plot</p>
+            {% autoescape off %}
+            {{ plot_div }}
+            {% endautoescape %}
         </article>
     </main>
     <footer>
