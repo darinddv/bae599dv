@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'bae599dv.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bae599dv',
+        'NAME': 'dfptl29p4qcdoh',
         'USER': 'xakwvcqbmmoywc',
         'PASSWORD': '9aefab9ea34ce27b7844d163b7fa78cb34d0afd33c6df3eaf8ea1e4831235ffa',
         'HOST': 'ec2-3-226-163-72.compute-1.amazonaws.com',
