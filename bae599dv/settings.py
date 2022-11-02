@@ -84,9 +84,18 @@ WSGI_APPLICATION = 'bae599dv.wsgi.application'
         'CONN_MAX_AGE': 500
     } 
 }"""
-import dj_database_url
-DATABASES = {'default': dj_database_url.config(conn_max_age=600)}
-
+#import dj_database_url
+#DATABASES = {'default': dj_database_url.config(conn_max_age=600)}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'bae599dv',
+        'USER': 'xakwvcqbmmoywc',
+        'PASSWORD': '9aefab9ea34ce27b7844d163b7fa78cb34d0afd33c6df3eaf8ea1e4831235ffa',
+        'HOST': 'ec2-3-226-163-72.compute-1.amazonaws.com',
+        'PORT':  5432
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
