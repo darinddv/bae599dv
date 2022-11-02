@@ -37,6 +37,50 @@
     <main>
         <article class="work">
             <p>Plot</p>
+            
+            <label>Locations<label><!---
+                <select id="locations">
+                    <option value="bowling-green">Bowling Green</option>
+                    <option value="cincinatti">Cincinatti</option>
+                    <option value="jackson">Jackson</option>
+                    <option value="lexington">Lexington</option>
+                    <option value="london">London</option>
+                    <option value="louisville">Louisville</option>
+                    <option value="paducah">Paducah</option>
+                     This doesn't work but it would be useful
+                          Try to fix later so it pulls location names from 
+                          the database instead of pre-made list.
+                    {% for i in z %}
+                    <option value="{{ i }}">{{ i }}</option>
+                    {% endfor %}
+                  
+                </select>
+                  -->
+            <form>
+                <fieldset>
+                  <legend>Locations</legend>
+                  <select name="1A" id="select" autocomplete="off" required>
+                    <option value="">--Please choose a location--</option>
+                    <option value="bowling-green">Bowling Green</option>
+                    <option value="cincinatti">Cincinatti</option>
+                    <option value="jackson">Jackson</option>
+                    <option value="lexington">Lexington</option>
+                    <option value="london">London</option>
+                    <option value="louisville">Louisville</option>
+                    <option value="paducah">Paducah</option>
+                  </select>
+                </fieldset>
+                <fieldset id="custom">
+                  <legend>Custom controls</legend>
+                  <select name="2A" id="select" autocomplete="off" required>
+                    <option value="">--Choose an option--</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                  </select>
+                </fieldset>
+            </form>
             {% autoescape off %}
             {{ plot_div }}
             {% endautoescape %}
