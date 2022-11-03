@@ -4,7 +4,7 @@ from django.db import models
 
 class LocationLoads(models.Model):
     location_name = models.CharField(max_length=50)
-    batteries = models.FloatField()
+    batteries = models.JSONField()
     loads = models.JSONField()
 
     def __str__(self):
