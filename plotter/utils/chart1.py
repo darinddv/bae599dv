@@ -9,8 +9,10 @@ def plot_func():
     fig.update_xaxes(side="bottom")
     fig.update_layout(
         title='Maximum Load for Battery/PV Panel Combos Based on Lexington PV Data',
-        xaxis_nticks=36)
+        xaxis_nticks=36,
+        autosize=False,
+        width=1000,
+        height=500)
     plot_div = io.to_html(fig, full_html=True)
     return plot_div
 
-    

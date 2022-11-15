@@ -18,3 +18,6 @@ def plotter(request):
     #loads = LocationLoadsTables.loads
     #json_to_df = pd.read_json()
     return render(request, "plotter/plotter.html",context={'plot_div': chart1.plot_func()}) # Pass response as argument here
+
+def index2(request):
+    return render(request, "plotter/index2.html",context={'plot_div': chart1.plot_func()}) # Pass response as argument here
