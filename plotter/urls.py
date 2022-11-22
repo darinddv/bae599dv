@@ -7,5 +7,6 @@ from . import views
 urlpatterns = [
     # path("URL page", pointer-to-view)
     path("plotter", views.plotter),
-    path("index2", views.index2)
+    path("index2", views.index2),
+    path("shapely", views.shapely)
 ]
